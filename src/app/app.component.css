@@ -1,0 +1,86 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.background-container{
+    background-color: rgb(60, 97, 146);
+}
+
+.background-container h4{
+    color: white;
+}
+
+.btn-main {
+    background-color: rgb(88, 124, 172);
+    border-radius: 1rem;
+    width: 6rem;
+    height: 2.5rem;
+    color: white;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease-in-out;
+  }
+  
+  .btn-main:hover {
+    background-color: rgb(57, 83, 117);
+    transform: scale(1.2);
+  }
+  
+  .btn-main:active {
+    outline: none;
+    border: white 2px;
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(173, 216, 230, 0.5);
+  }
+  
+  .form-container {
+    animation: bounce 1.5s cubic-bezier(0.5, 0.05, 0.1, 0.9);
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  h4.text-center {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(40) infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
