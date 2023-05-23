@@ -33,7 +33,7 @@ export class AppComponent {
 
     // Establecemos la conexion con el back-end
     console.log(params);
-    this.httpClient.post('http://localhost:3000/send',params).subscribe(res => {
+    this.httpClient.post('https://test-email-api.onrender.com/send',params).subscribe(res => {
       console.log(res);
       Notiflix.Loading.remove();
       Notiflix.Notify.success('Successfully sent');
