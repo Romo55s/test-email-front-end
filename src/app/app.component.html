@@ -5,9 +5,24 @@
       <input type="text" class="form-control mb-3" placeholder="Email" formControlName="email">
       <input type="text" class="form-control mb-3" placeholder="Bisne" formControlName="about">
       <textarea class="form-control mb-3" placeholder="Mssg" cols="40" rows="4" formControlName="mssg"></textarea>
-      <div class="text-center">
+      <div class="text-center p-2">
         <button type="submit" class="btn btn-main" (click)="sendEmail()">Send</button>
       </div>
+      <div class="text-center p-2">
+        <button type="submit" class="btn btn-status" (click)="status()">Status</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showReceivedData && okBack == true" class="p-3">
+    <div class="container">
+      <h3>Received Data:</h3>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>From:</strong> {{ receiveDatadMsg.from }}</li>
+        <li class="list-group-item"><strong>Subject:</strong> {{ receiveDatadMsg.subject }}</li>
+        <li class="list-group-item"><strong>To:</strong> {{ receiveDatadMsg.to }}</li>
+        <li class="list-group-item"><strong>Text:</strong> {{ receiveDatadMsg.text }}</li>
+      </ul>
     </div>
   </div>
 </form>
